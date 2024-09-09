@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<!--Specify the language that the HTML uses-->
+<html lang="en-US">
 <head>
     <title>About Me</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #4ebfe8;
             line-height: 1.6;
         }
         .container {
@@ -14,46 +15,99 @@
             overflow: hidden;
         }
         .main-info {
-            background: #333;
+            background: #9429dc;
             color: #fff;
             padding: 20px;
+            margin-bottom: 10px;
+        }
+        /*Added a new class and assigned it to my image, this centers the image*/
+        .myimage {
+            display: block;
+            margin: 0 auto;
         }
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .lewis, .course, .job, .fun-fact {
-            background: #e7e7e7;
+        /*Added 3 additional classes, and added a life style type to give lists a square icon*/
+        .hobbies, .lewis, .course, .job, .fun-fact, .introduction, .learn, .favorite {
+            background: #515ed2;
             padding: 15px;
             margin-bottom: 10px;
+            list-style-type: square;
+        }
+
+        /*This adds a list inside of a list in favorite hobby to also give those internal lists a square*/
+        ul {
+            list-style-type: square;
         }
     </style>
 </head>
+<!--Added a margin-bottom to main information to look nicer!-->
 <body>
     <div class="container">
         <header class="main-info">
+            <img src="me.png" alt="Sam" class="myimage">
             <h1>Samuel Swedo</h1>
             <h1>Preferred Name: Sam</h1>
+            <!--Added an email and discord section and added a link for email-->
+            <h1>Lewis Email: <a href = "samueljswedo@lewisu.edu">samueljswedo@lewisu.edu</a></h1>
+            <h1>Discord: Grunt100</h1>
         </header>
 
+        <!--Added a overview of myself, a little introduction-->
+        <section class ="introduction">
+            <h2>Introduction</h2>
+            <p>My name is Sam Swedo, I am a Computer Science Major with a Minor in Cybersecurity. I love to swim, game, and watch wrestling. I have 2 brothers and 2 dogs. The dogs also love to swim in the pool!</p>
+        </section>
+
+        <!--Redesigned this area to look nice, descriptions are now paragraphs instead of headers-->
         <section class="lewis">
-			<h2>Year at Lewis: Senior 4</h2>
-			<h2>Lewis major/minor/concentrations: Major in Computer Science, Minor in Cybersecurity, No Concentration</h2>
-			<h2>Reasons for pursuing this degree: I have a lot of passion for technology, and I like to create things and this degree will help me learn a wide variety of skills so that I can be successfull in my career and for my own personal projects!</h2>
+			<h2>Year At Lewis:</h2>
+            <p>Senior, Year 4</p>
+			<h2>Lewis Major/Minor/Concentrations:</h2>
+            <li>Major in Computer Science</li>
+            <li>Minor in Cybersecurity</li>
+            <li>No Concentration</li>
+			<h2>Reasons For Pursuing Degree:</h2>
+            <p>I have a lot of passion for technology, and I like to create things and this degree will help me learn a wide variety of skills so that I can be successfull in my career and for my own personal projects!</p>
         </section>
 
 		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
+            <h2>Reasons For Taking This Course</h2>
             <p>I am taking this course because I want to become a better programmer and be able to create my own software. There are a lot of elements going on for this course including hosting sites that I find to be very valuable to learn!</p>
         </section>
 
+        <!--Added a new section about what I hope to learn from this course-->
+        <section class="learn">
+            <h2>What I Hope To Learn In This Course</h2>
+            <li>Scrum / Agile Methodology</li>
+            <li>HTML / Javascript Programming</li>
+            <li>Software Development</li>
+            <li>Team Management</li>
+            <li>Deadline Management</li>
+        </section>
+
+        <!--Fixed the header so it is now bolded-->
 		<section class="job">
-            <p>Current/Recent Job</p>
+            <h2>Current/Recent Job</h2>
 			<p>I worked at a golf course as a bagger. It was my responsibility to clean, maintain, and charge 78 golf carts, while bringing them out to members. I also store member's golf clubs as well as clean them!</p>
         </section>		
 
+        <!--Added a section for my absolute favorite hobby and activity, it also uses lists with squares-->
+        <section class="favorite">
+            <h2>My Favorite Hobby/Activity</h2>
+            <li>Gaming</li>
+            <li>Pro-Wrestling</li>
+            <ul>
+                <li>World Wrestling Entertainment: <a href="https://www.wwe.com/">WWE Website</a></li>
+                <li>All Elite Wrestling: <a href="https://www.allelitewrestling.com/">AEW Website</a></li>
+                <li>Total Nonstop Action: <a href="https://tnawrestling.com/">TNA Website</a></li>
+            </ul>
+        </section>
+
         <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>I have a lot of hobbies which include swimming, gaming, and going out to explore places! I have a lot of interests for Pro-Wrestling and technology!</p>
+            <h2>Hobbies And Special Interests</h2>
+            <p>I have a lot of hobbies and special interests. I like things like gaming, wrestling, technology, swimming, and more. I enjoy going out on walks and exploring nature. I also like to build gaming computers for myself and my friends!</p>
         </section>
 
         <section class="fun-fact">
