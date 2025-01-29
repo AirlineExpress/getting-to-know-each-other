@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: tan;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.main-info {
+    background: rgb(61, 43, 43);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+/*Added a new class and assigned it to my image, this centers the image*/
+.myimage {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+.main-info h1 {
+    margin: 0;
+}
+/*Added 3 additional classes, and added a life style type to give lists a square icon*/
+.hobbies, .lewis, .course, .job, .fun-fact, .introduction, .learn, .favorite {
+    background: #93949c;
+    padding: 15px;
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/*This adds a list inside of a list in favorite hobby to also give those internal lists a square*/
+ul {
+    list-style-type: square;
+}
